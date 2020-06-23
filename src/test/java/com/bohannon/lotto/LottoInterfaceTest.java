@@ -1,4 +1,3 @@
-/*
 package com.bohannon.lotto;
 
 import org.junit.Test;
@@ -22,4 +21,3 @@ public class LottoInterfaceTest {
         System.out.println("The interface size is correct: " + testInterfaceSize);
     }
 }
- */

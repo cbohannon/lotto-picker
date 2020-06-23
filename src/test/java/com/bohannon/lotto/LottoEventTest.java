@@ -1,9 +1,7 @@
-/*
 package com.bohannon.lotto;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
-*/
 
 /**
  * Created with IntelliJ IDEA.
@@ -13,7 +11,6 @@ import static org.junit.Assert.*;
  * To change this template use File | Settings | File Templates.
  */
 
-/*
 public class LottoEventTest {
     @Test
     public void testActionPerformed() throws Exception {
@@ -30,4 +27,3 @@ public class LottoEventTest {
 
     }
 }
- */

@@ -6,7 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="816d0a38-82cb-47cc-a087-64f8d8a01281" name="Default" comment="" />
+    <list default="true" id="816d0a38-82cb-47cc-a087-64f8d8a01281" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bohannon-lotto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bohannon-lotto.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoEventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoEventTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoInterfaceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bohannon.lotto.LottoEventTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bohannon.lotto.LottoInterfaceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.bohannon.lotto.LottoEventTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.bohannon.lotto.LottoInterfaceTest.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,10 +77,13 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="/usr/local/apache-maven-3.0.4" />
+        <option name="mavenHome" value="C:/Tools/apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -78,6 +97,7 @@
     <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
   <component name="ProjectId" id="1deV6ADaf8KIU1ptMnrctXOtzpk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -93,6 +113,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
@@ -107,6 +128,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -272,26 +294,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="860" y="356" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592785446201" />
-    <state x="1060" y="456" key="FileChooserDialogImpl" timestamp="1592785439613">
+    <state x="1060" y="456" key="FileChooserDialogImpl" timestamp="1592913224763">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592785439613" />
-    <state width="2517" height="248" key="GridCell.Tab.0.bottom" timestamp="1592828775320">
+    <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913224763" />
+    <state width="2517" height="248" key="GridCell.Tab.0.bottom" timestamp="1592913581228">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592828775320" />
-    <state width="2517" height="248" key="GridCell.Tab.0.center" timestamp="1592828775320">
+    <state width="2517" height="248" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913581228" />
+    <state width="2517" height="248" key="GridCell.Tab.0.center" timestamp="1592913581228">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592828775320" />
-    <state width="2517" height="248" key="GridCell.Tab.0.left" timestamp="1592828775319">
+    <state width="2517" height="248" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913581228" />
+    <state width="2517" height="248" key="GridCell.Tab.0.left" timestamp="1592913581227">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592828775319" />
-    <state width="2517" height="248" key="GridCell.Tab.0.right" timestamp="1592828775320">
+    <state width="2517" height="248" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913581227" />
+    <state width="2517" height="248" key="GridCell.Tab.0.right" timestamp="1592913581228">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592828775320" />
+    <state width="2517" height="248" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913581228" />
+    <state x="781" y="343" key="SettingsEditor" timestamp="1592913229090">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="343" key="SettingsEditor/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913229090" />
     <state x="976" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1592823747241">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
