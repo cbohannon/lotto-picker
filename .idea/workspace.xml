@@ -6,23 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="816d0a38-82cb-47cc-a087-64f8d8a01281" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bohannon-lotto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bohannon-lotto.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoEventTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoEventTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoInterfaceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoInterfaceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bohannon.lotto.LottoEventTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.bohannon.lotto.LottoInterfaceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.bohannon.lotto.LottoEventTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.bohannon.lotto.LottoInterfaceTest.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="816d0a38-82cb-47cc-a087-64f8d8a01281" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -298,22 +282,22 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913224763" />
-    <state width="2517" height="248" key="GridCell.Tab.0.bottom" timestamp="1592913581228">
+    <state width="2517" height="248" key="GridCell.Tab.0.bottom" timestamp="1592913738898">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913581228" />
-    <state width="2517" height="248" key="GridCell.Tab.0.center" timestamp="1592913581228">
+    <state width="2517" height="248" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913738898" />
+    <state width="2517" height="248" key="GridCell.Tab.0.center" timestamp="1592913738898">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913581228" />
-    <state width="2517" height="248" key="GridCell.Tab.0.left" timestamp="1592913581227">
+    <state width="2517" height="248" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913738898" />
+    <state width="2517" height="248" key="GridCell.Tab.0.left" timestamp="1592913738898">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913581227" />
-    <state width="2517" height="248" key="GridCell.Tab.0.right" timestamp="1592913581228">
+    <state width="2517" height="248" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913738898" />
+    <state width="2517" height="248" key="GridCell.Tab.0.right" timestamp="1592913738898">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913581228" />
+    <state width="2517" height="248" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913738898" />
     <state x="781" y="343" key="SettingsEditor" timestamp="1592913229090">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
