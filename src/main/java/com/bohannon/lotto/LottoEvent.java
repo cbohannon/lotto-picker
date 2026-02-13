@@ -9,10 +9,17 @@ import java.awt.event.ItemListener;
 public class LottoEvent implements ItemListener, ActionListener, Runnable {
 
     private LottoInterface gui;
+    private LottoEngine engine;
     private Thread playing;
 
     public LottoEvent(LottoInterface in) {
         gui = in;
+        engine = new LottoEngine();
+    }
+
+    public LottoEvent(LottoInterface in, LottoEngine engine) {
+        gui = in;
+        this.engine = engine;
     }
 
     public void actionPerformed(ActionEvent event) {
@@ -54,6 +61,7 @@ public class LottoEvent implements ItemListener, ActionListener, Runnable {
     }
 
     void clearAllFields() {
+        engine.reset();
         for (int i = 0; i < 6; i++) {
             gui.numbers[i].setText(null);
             gui.winners[i].setText(null);
@@ -78,12 +86,10 @@ public class LottoEvent implements ItemListener, ActionListener, Runnable {
     public void itemStateChanged(ItemEvent event) {
         Object item = event.getItem();
         if (item == gui.quickpick) {
-            for (int i = 0; i < 6; i ++) {
-                int pick;
-                do {
-                    pick = (int) Math.floor(Math.random() * 50 + 1);
-                } while (numberGone(pick, gui.numbers, i));
-                gui.numbers[i].setText("" + pick);
+            engine.generateQuickPick();
+            int[] picks = engine.getPicks();
+            for (int i = 0; i < 6; i++) {
+                gui.numbers[i].setText("" + picks[i]);
             }
         } else {
             for (int i = 0; i < 6; i++) {
@@ -92,82 +98,50 @@ public class LottoEvent implements ItemListener, ActionListener, Runnable {
         }
     }
 
-    void addOneToField(JTextField field) {
-        int num = Integer.parseInt("0" + field.getText());
-        num ++;
-        field.setText("" + num);
+    /**
+     * Read the current user picks from the GUI text fields into the engine.
+     */
+    private void syncPicksFromGui() {
+        int[] picks = new int[6];
+        for (int i = 0; i < 6; i++) {
+            picks[i] = Integer.parseInt("0" + gui.numbers[i].getText());
+        }
+        engine.setPicks(picks);
     }
 
-    boolean numberGone(int num, JTextField[] pastNums, int count) {
-        for (int i = 0; i < count; i ++) {
-            if (Integer.parseInt(pastNums[i].getText()) == num) {
-                return true;
-            }
+    /**
+     * Push all engine state back to the GUI text fields.
+     */
+    private void syncGuiFromEngine() {
+        int[] winners = engine.getWinners();
+        for (int i = 0; i < 6; i++) {
+            gui.winners[i].setText("" + winners[i]);
         }
-        return false;
-    }
-
-    boolean matchedOne(JTextField win, JTextField[] allPicks) {
-        for (int i = 0; i < 6; i ++) {
-            String winText = win.getText();
-            if ( winText.equals( allPicks[i].getText() ) ) {
-                return true;
-            }
-        }
-        return false;
+        gui.got3.setText("" + engine.getMatchesOf3());
+        gui.got4.setText("" + engine.getMatchesOf4());
+        gui.got5.setText("" + engine.getMatchesOf5());
+        gui.got6.setText("" + engine.getMatchesOf6());
+        gui.drawings.setText("" + engine.getDrawingCount());
+        gui.years.setText("" + engine.getYears());
     }
 
     public void run() {
         Thread thisThread = Thread.currentThread();
         while (playing == thisThread) {
-            addOneToField(gui.drawings);
-            int draw = Integer.parseInt(gui.drawings.getText());
-            float numYears = (float)draw / 104;
-            gui.years.setText("" + numYears);
+            syncPicksFromGui();
+            engine.runOneDrawing();
+            syncGuiFromEngine();
 
-            setMatchedField(pullWinningNumbers());
+            if (engine.isJackpotHit()) {
+                stopPlaying();
+                break;
+            }
 
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 // do nothing
             }
-        }
-    }
-
-    private int pullWinningNumbers() {
-        int matches = 0;
-        for (int i = 0; i < 6; i ++) {
-            int ball;
-            do {
-                ball = (int) Math.floor(Math.random() * 50 + 1);
-            } while (numberGone(ball, gui.winners, i));
-            gui.winners[i].setText("" + ball);
-            if (matchedOne(gui.winners[i], gui.numbers)) {
-                matches++;
-            }
-        }
-
-        return matches;
-    }
-
-    private void setMatchedField(int matches) {
-        // We are ignoring 1 or 2 matches
-        switch (matches) {
-            case 3:
-                addOneToField(gui.got3);
-                break;
-            case 4:
-                addOneToField(gui.got4);
-                break;
-            case 5:
-                addOneToField(gui.got5);
-                break;
-            case 6:
-                addOneToField(gui.got6);
-                gui.stop.setEnabled(false);
-                gui.play.setEnabled(true);
-                playing = null;
         }
     }
 }
