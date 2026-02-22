@@ -8,6 +8,14 @@ Pick 6 numbers (1–54) manually or use Quick Pick for random selection, then cl
 
 Results include total drawings run and an estimated elapsed time in years (assuming 156 drawings/year — Monday, Wednesday, and Saturday). The app defaults to the 6 most historically common Lotto Texas numbers: **4, 8, 15, 19, 26, 38**.
 
+## The Brutal Math
+
+The odds of matching all 6 numbers from 1–54 are **1 in 25,827,165**.
+
+At 156 drawings per year (Monday, Wednesday, and Saturday), that works out to an *average* of roughly **165,000 years** of real-time play before hitting the jackpot. A 25,000 year run is actually a lucky one.
+
+This simulator makes those astronomical odds viscerally real in a way that simply reading the number never quite does. Hit Turbo mode and watch the years tick into the tens of thousands. Watch the lottery in action!
+
 ## Building and Running
 
 **Requirements:** Java 8+, Maven 3
