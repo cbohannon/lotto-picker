@@ -31,3 +31,4 @@ target/
 
 # Claude Code
 .claude/
+*.claude_*

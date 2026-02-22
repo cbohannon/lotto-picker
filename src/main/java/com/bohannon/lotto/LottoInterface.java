@@ -75,9 +75,10 @@ public class LottoInterface extends JFrame {
         row2.setLayout(layout2);
         row2.add(numbersLabel);
 
+        int[] defaultNumbers = {4, 8, 15, 19, 26, 38}; // most common Lotto Texas numbers
         for (int i = 0; i < 6; i ++) {
             numbers[i] = new JTextField();
-            numbers[i].setText(String.valueOf(i + 1)); // set the default numbers
+            numbers[i].setText(String.valueOf(defaultNumbers[i]));
             row2.add(numbers[i]);
         }
 

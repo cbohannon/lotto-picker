@@ -10,8 +10,8 @@ import java.util.Random;
 public class LottoEngine {
 
     public static final int NUM_PICKS = 6;
-    public static final int MAX_NUMBER = 50;
-    public static final int DRAWINGS_PER_YEAR = 104;
+    public static final int MAX_NUMBER = 54;
+    public static final int DRAWINGS_PER_YEAR = 156;
 
     private final Random random;
 

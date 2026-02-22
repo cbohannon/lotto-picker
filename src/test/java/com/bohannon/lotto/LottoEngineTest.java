@@ -97,7 +97,7 @@ public class LottoEngineTest {
         LottoEngine engine = new LottoEngine(new Random(42));
         int[] numbers = engine.generateNumbers();
         for (int n : numbers) {
-            assertTrue("Number " + n + " out of range", n >= 1 && n <= 50);
+            assertTrue("Number " + n + " out of range", n >= 1 && n <= 54);
         }
     }
 
@@ -126,7 +126,7 @@ public class LottoEngineTest {
             assertEquals(6, numbers.length);
             Set<Integer> unique = new HashSet<>();
             for (int n : numbers) {
-                assertTrue(n >= 1 && n <= 50);
+                assertTrue(n >= 1 && n <= 54);
                 assertTrue(unique.add(n));
             }
         }
@@ -142,7 +142,7 @@ public class LottoEngineTest {
         assertNotNull(picks);
         assertEquals(6, picks.length);
         for (int p : picks) {
-            assertTrue(p >= 1 && p <= 50);
+            assertTrue(p >= 1 && p <= 54);
         }
     }
 
@@ -186,7 +186,7 @@ public class LottoEngineTest {
         engine.runOneDrawing();
         int[] winners = engine.getWinners();
         for (int w : winners) {
-            assertTrue(w >= 1 && w <= 50);
+            assertTrue(w >= 1 && w <= 54);
         }
     }
 
@@ -254,7 +254,7 @@ public class LottoEngineTest {
     public void testGetYears_oneYear() {
         LottoEngine engine = new LottoEngine(new Random(42));
         engine.setPicks(new int[]{1, 2, 3, 4, 5, 6});
-        for (int i = 0; i < 104; i++) {
+        for (int i = 0; i < 156; i++) {
             engine.runOneDrawing();
         }
         assertEquals(1.0f, engine.getYears(), 0.001f);
@@ -264,7 +264,7 @@ public class LottoEngineTest {
     public void testGetYears_halfYear() {
         LottoEngine engine = new LottoEngine(new Random(42));
         engine.setPicks(new int[]{1, 2, 3, 4, 5, 6});
-        for (int i = 0; i < 52; i++) {
+        for (int i = 0; i < 78; i++) {
             engine.runOneDrawing();
         }
         assertEquals(0.5f, engine.getYears(), 0.001f);

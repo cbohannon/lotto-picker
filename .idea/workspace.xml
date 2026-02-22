@@ -5,8 +5,25 @@
       <artifact name="bohannon-lotto:jar" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="816d0a38-82cb-47cc-a087-64f8d8a01281" name="Default" comment="" />
+    <list default="true" id="816d0a38-82cb-47cc-a087-64f8d8a01281" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bohannon-lotto.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bohannon/lotto/LottoEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohannon/lotto/LottoEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoEngineTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,53 +84,38 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:/Tools/apache-maven-3.6.3" />
+        <option name="customMavenHome" value="$PROJECT_DIR$/../../../Tools/apache-maven-3.6.3" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="keepSourceFolders" value="false" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="1deV6ADaf8KIU1ptMnrctXOtzpk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java/com/bohannon/lotto" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="options.lastSelected" value="MavenSettings" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="recentsLimit" value="5" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LottoInterface.executor": "Run",
+    "Maven.bohannon-lotto [clean].executor": "Run",
+    "Maven.bohannon-lotto [compile].executor": "Run",
+    "Maven.bohannon-lotto [test].executor": "Run",
+    "Maven.bohannon-lotto [validate].executor": "Run",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.bohannon.lotto" />
@@ -136,6 +138,15 @@
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="LottoInterface" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.bohannon.lotto.LottoInterface" />
@@ -217,15 +228,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.LottoInterface" />
       <item itemvalue="JUnit.LottoEventTest" />
@@ -236,6 +238,13 @@
         <item itemvalue="Application.LottoInterface" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
     <option name="USER" value="" />
@@ -266,45 +275,6 @@
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1128" y="590" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1592785450306">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1128" y="590" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592785450306" />
-    <state x="860" y="356" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor" timestamp="1592785446201">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="860" y="356" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592785446201" />
-    <state x="1060" y="456" key="FileChooserDialogImpl" timestamp="1592913224763">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1060" y="456" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913224763" />
-    <state width="2517" height="248" key="GridCell.Tab.0.bottom" timestamp="1592913738898">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913738898" />
-    <state width="2517" height="248" key="GridCell.Tab.0.center" timestamp="1592913738898">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913738898" />
-    <state width="2517" height="248" key="GridCell.Tab.0.left" timestamp="1592913738898">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913738898" />
-    <state width="2517" height="248" key="GridCell.Tab.0.right" timestamp="1592913738898">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="248" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913738898" />
-    <state x="781" y="343" key="SettingsEditor" timestamp="1592913229090">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="781" y="343" key="SettingsEditor/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592913229090" />
-    <state x="976" y="525" key="com.intellij.ide.util.TipDialog" timestamp="1592823747241">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="976" y="525" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.0.1080.1880@0.0.2560.1400" timestamp="1592823747241" />
   </component>
 </project>
