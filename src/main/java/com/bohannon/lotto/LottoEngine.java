@@ -12,6 +12,7 @@ public class LottoEngine {
     public static final int NUM_PICKS = 6;
     public static final int MAX_NUMBER = 54;
     public static final int DRAWINGS_PER_YEAR = 156;
+    public static final int[] DEFAULT_PICKS = {4, 8, 15, 19, 26, 38}; // most common Lotto Texas numbers
 
     private final Random random;
 

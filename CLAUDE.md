@@ -35,7 +35,7 @@ The project is a Swing-based lottery simulator with a clean separation between g
 
 - **`LottoEngine`** — Pure game logic with no Swing dependencies. Accepts an injectable `Random` for deterministic testing. Manages picks, winners, drawing counts, and match tallies. This is the only class with real unit tests.
 
-- **`LottoEvent`** — Event handler and game loop coordinator. Implements `ActionListener`, `ItemListener`, and `Runnable`. Bridges `LottoInterface` (GUI) and `LottoEngine` (logic). The game loop runs on a background thread, polling every 100ms until a jackpot or Stop.
+- **`LottoEvent`** — Event handler and game loop coordinator. Implements `ActionListener`, `ItemListener`, and `Runnable`. Bridges `LottoInterface` (GUI) and `LottoEngine` (logic). The game loop runs on a background thread at a user-selected speed (0/1/10/100ms) and throttles GUI updates to at most every 50ms to keep the EDT responsive.
 
 - **`LottoInterface`** — Swing `JFrame` that owns all GUI components. Directly exposes its fields (package-private) so `LottoEvent` can read/write them without getters.
 
@@ -50,3 +50,4 @@ The project is a Swing-based lottery simulator with a clean separation between g
 | `NUM_PICKS` | 6 |
 | `MAX_NUMBER` | 54 |
 | `DRAWINGS_PER_YEAR` | 156 |
+| `DEFAULT_PICKS` | `{4, 8, 15, 19, 26, 38}` |

@@ -8,9 +8,12 @@ import java.awt.event.ItemListener;
 
 public class LottoEvent implements ItemListener, ActionListener, Runnable {
 
+    private static final int[] SPEED_MS = {100, 10, 1, 0};
+    private static final int GUI_UPDATE_INTERVAL_MS = 50;
+
     private LottoInterface gui;
     private LottoEngine engine;
-    private Thread playing;
+    private volatile Thread playing;
 
     public LottoEvent(LottoInterface in) {
         gui = in;
@@ -63,7 +66,7 @@ public class LottoEvent implements ItemListener, ActionListener, Runnable {
     void clearAllFields() {
         engine.reset();
         for (int i = 0; i < 6; i++) {
-            gui.numbers[i].setText(null);
+            gui.numbers[i].setText(String.valueOf(LottoEngine.DEFAULT_PICKS[i]));
             gui.winners[i].setText(null);
         }
         gui.got3.setText("0");
@@ -100,13 +103,30 @@ public class LottoEvent implements ItemListener, ActionListener, Runnable {
 
     /**
      * Read the current user picks from the GUI text fields into the engine.
+     * Returns false and shows an error dialog if any field is invalid.
      */
-    private void syncPicksFromGui() {
+    private boolean syncPicksFromGui() {
         int[] picks = new int[6];
         for (int i = 0; i < 6; i++) {
-            picks[i] = Integer.parseInt("0" + gui.numbers[i].getText());
+            int value;
+            try {
+                value = Integer.parseInt(gui.numbers[i].getText());
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(gui,
+                        "Pick #" + (i + 1) + " is not a valid number.",
+                        "Invalid Input", JOptionPane.ERROR_MESSAGE);
+                return false;
+            }
+            if (value < 1 || value > LottoEngine.MAX_NUMBER) {
+                JOptionPane.showMessageDialog(gui,
+                        "Pick #" + (i + 1) + " must be between 1 and " + LottoEngine.MAX_NUMBER + ".",
+                        "Invalid Input", JOptionPane.ERROR_MESSAGE);
+                return false;
+            }
+            picks[i] = value;
         }
         engine.setPicks(picks);
+        return true;
     }
 
     /**
@@ -122,25 +142,38 @@ public class LottoEvent implements ItemListener, ActionListener, Runnable {
         gui.got5.setText("" + engine.getMatchesOf5());
         gui.got6.setText("" + engine.getMatchesOf6());
         gui.drawings.setText("" + engine.getDrawingCount());
-        gui.years.setText("" + engine.getYears());
+        gui.years.setText(String.format("%.1f", engine.getYears()));
     }
 
     public void run() {
         Thread thisThread = Thread.currentThread();
+        long lastGuiUpdate = 0;
         while (playing == thisThread) {
-            syncPicksFromGui();
+            if (!syncPicksFromGui()) {
+                SwingUtilities.invokeLater(this::stopPlaying);
+                break;
+            }
             engine.runOneDrawing();
-            syncGuiFromEngine();
+
+            long now = System.currentTimeMillis();
+            if (now - lastGuiUpdate >= GUI_UPDATE_INTERVAL_MS) {
+                SwingUtilities.invokeLater(this::syncGuiFromEngine);
+                lastGuiUpdate = now;
+            }
 
             if (engine.isJackpotHit()) {
-                stopPlaying();
+                SwingUtilities.invokeLater(this::syncGuiFromEngine);
+                SwingUtilities.invokeLater(this::stopPlaying);
                 break;
             }
 
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                // do nothing
+            int sleepMs = SPEED_MS[gui.speedCombo.getSelectedIndex()];
+            if (sleepMs > 0) {
+                try {
+                    Thread.sleep(sleepMs);
+                } catch (InterruptedException e) {
+                    // do nothing
+                }
             }
         }
     }

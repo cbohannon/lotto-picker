@@ -30,6 +30,14 @@ public class LottoInterface extends JFrame {
 
     // set up row 4
     JPanel row4 = new JPanel();
+
+    // set up row 5
+    JPanel row5 = new JPanel();
+    JLabel speedLabel = new JLabel("Drawing Speed: ", JLabel.RIGHT);
+    JComboBox<String> speedCombo = new JComboBox<>(new String[]{
+        "100 ms (Slow)", "10 ms (Medium)", "1 ms (Fast)", "0 ms (Turbo)"});
+
+
     JLabel got3Label = new JLabel("3 of 6: ", JLabel.RIGHT);
     JTextField got3 = new JTextField("0");
     JLabel got4Label = new JLabel("4 of 6: ", JLabel.RIGHT);
@@ -75,10 +83,9 @@ public class LottoInterface extends JFrame {
         row2.setLayout(layout2);
         row2.add(numbersLabel);
 
-        int[] defaultNumbers = {4, 8, 15, 19, 26, 38}; // most common Lotto Texas numbers
         for (int i = 0; i < 6; i ++) {
             numbers[i] = new JTextField();
-            numbers[i].setText(String.valueOf(defaultNumbers[i]));
+            numbers[i].setText(String.valueOf(LottoEngine.DEFAULT_PICKS[i]));
             row2.add(numbers[i]);
         }
 
@@ -126,6 +133,12 @@ public class LottoInterface extends JFrame {
         row4.add(years);
 
         add(row4);
+
+        row5.setLayout(new FlowLayout(FlowLayout.CENTER, 10, 10));
+        row5.add(speedLabel);
+        row5.add(speedCombo);
+
+        add(row5);
 
         setWindowLocation();
         setVisible(true);

@@ -10,19 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="816d0a38-82cb-47cc-a087-64f8d8a01281" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CLAUDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bohannon-lotto.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/bohannon/lotto/LottoEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohannon/lotto/LottoEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoEngineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/bohannon/lotto/LottoEngineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bohannon/lotto/LottoEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohannon/lotto/LottoEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bohannon/lotto/LottoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bohannon/lotto/LottoInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
