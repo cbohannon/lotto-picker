@@ -11,7 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="816d0a38-82cb-47cc-a087-64f8d8a01281" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,19 +91,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.LottoInterface.executor": "Run",
-    "Maven.bohannon-lotto [clean].executor": "Run",
-    "Maven.bohannon-lotto [compile].executor": "Run",
-    "Maven.bohannon-lotto [test].executor": "Run",
-    "Maven.bohannon-lotto [validate].executor": "Run",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.LottoInterface.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bohannon-lotto [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bohannon-lotto [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bohannon-lotto [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bohannon-lotto [validate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.bohannon.lotto" />
